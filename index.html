@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>iDragon | Interactive Prototype</title><link rel="stylesheet" href="css/styles.css"></head>
+<body><main class="shell"><header><div class="brand">i<span>Dragon</span></div><small>UX/UI Prototype · Demo only</small></header>
+<section class="panel"><div class="heading"><div><h1>Đặt lệnh</h1><p>Giao diện mô phỏng, không kết nối hệ thống giao dịch.</p></div><button id="settingsBtn" class="ghost">⚙ Cài đặt</button></div>
+<div class="tabs"><button class="tab active" data-side="buy">Mua</button><button class="tab" data-side="sell">Bán</button></div>
+<div class="fields"><label>Mã chứng khoán<input id="ticker" value="FPT" maxlength="8"></label><label>Giá (VNĐ)<input id="price" type="number" min="1" value="95000"></label><label>Khối lượng (CP)<input id="quantity" type="number" min="1" step="1" value="100"></label></div>
+<div class="summary"><span>Giá trị lệnh tạm tính</span><strong id="total"></strong></div><button id="submitBtn" class="primary">Xác nhận mua</button></section>
+<section class="panel orders"><h2>Sổ lệnh mô phỏng</h2><p id="emptyOrders">Chưa có lệnh mô phỏng.</p><ul id="orderList"></ul></section></main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div><dialog id="settingsDialog"><h2>Cài đặt hiển thị</h2><label class="check"><input type="checkbox" id="largeText"> Cỡ chữ lớn</label><button id="closeSettings" class="ghost">Đóng</button></dialog><script src="js/app.js"></script></body></html>
